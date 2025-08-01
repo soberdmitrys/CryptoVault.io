@@ -2,7 +2,6 @@
 document.getElementById('login-form')?.addEventListener('submit', (e) => {
   e.preventDefault();
   const email = document.getElementById('email').value;
-  // Fake authentication
   localStorage.setItem('user', email);
   if (email === 'admin@cryptovault.com') {
     window.location.href = 'admin.html';
@@ -17,14 +16,13 @@ if (window.location.pathname.includes('dashboard.html')) {
   document.getElementById('user-email').textContent = user;
 }
 
-// Simulate admin setting plan (no backend yet)
+// Simulate admin setting plan
 document.getElementById('admin-form')?.addEventListener('submit', (e) => {
   e.preventDefault();
   const userEmail = document.getElementById('admin-user-email').value;
   const investment = document.getElementById('investment').value;
   const dailyRate = document.getElementById('daily-rate').value;
   const duration = document.getElementById('plan-duration').value;
-  // Calculate end balance (compound interest)
   const endBalance = (investment * Math.pow(1 + dailyRate / 100, duration)).toFixed(2);
   alert(`Plan set for ${userEmail}: $${investment} at ${dailyRate}% daily for ${duration} days. End balance: $${endBalance}`);
 });
