@@ -3,22 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CryptoVault - Login</title>
+  <title>CryptoVault - Invest in Your Future</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>CryptoVault</h1>
-    <div class="card">
-      <h2>Login</h2>
-      <form id="login-form">
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="password" id="password" placeholder="Password" required>
-        <button type="submit">Login</button>
-      </form>
-      <p><a href="#">Sign Up</a> | <a href="#">Forgot Password?</a></p>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>CryptoVault</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="index.html#login">Login</a>
+      </nav>
     </div>
-  </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Invest in Crypto & Stocks with Confidence</h2>
+      <p>Join 100K+ investors building wealth with CryptoVault’s automated platform.</p>
+      <a href="#login" class="cta-button">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Storyline Section -->
+  <section id="about" class="storyline">
+    <div class="container">
+      <h2>Our Story</h2>
+      <p>For over 17 years, CryptoVault has empowered investors worldwide to achieve financial freedom. Our cutting-edge platform combines crypto and stock trading with expert guidance, helping over 100,000 customers manage $2 billion in assets. From beginners to pros, we’re here to make your investments grow.</p>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat-card">
+        <h3>17+</h3>
+        <p>Years of Operation</p>
+      </div>
+      <div class="stat-card">
+        <h3>$2B+</h3>
+        <p>Assets Under Administration</p>
+      </div>
+      <div class="stat-card">
+        <h3>100K+</h3>
+        <p>Customers Served</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>Trust Services</h3>
+          <p>Securely store your crypto assets with our industry-leading custody solutions, backed by advanced encryption and 24/7 monitoring.</p>
+        </div>
+        <div class="service-card">
+          <h3>Financing</h3>
+          <p>Access flexible investment plans to grow your portfolio, with automated strategies tailored to your goals.</p>
+        </div>
+        <div class="service-card">
+          <h3>Global Advisors</h3>
+          <p>Get expert guidance from our worldwide team of financial advisors to maximize your returns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login" class="login">
+    <div class="container">
+      <div class="card">
+        <h2>Login</h2>
+        <form id="login-form">
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="password" id="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+        <p><a href="#">Sign Up</a> | <a href="#">Forgot Password?</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 CryptoVault. All rights reserved.</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
