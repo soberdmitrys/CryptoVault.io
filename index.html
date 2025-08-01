@@ -8,33 +8,28 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>CryptoVault</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="#login">Login</a>
-      </nav>
-    </div>
-  </header>
+  <!-- Minimal Top (No Nav) -->
+  <div class="top-bar">
+    <h1>CryptoVault</h1>
+  </div>
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Scroll Effect Placeholder -->
   <section class="hero">
     <div class="container">
+      <div class="scroll-effect" data-type="fade">
+        <div class="effect-placeholder">Animated Investment Video</div>
+      </div>
       <h2>Build Wealth with CryptoVault Investments</h2>
-      <p>Join over 100,000 investors growing their portfolios with our automated, secure platform.</p>
-      <a href="#login" class="cta-button">Start Investing</a>
+      <p>Join over 100,000 investors growing their portfolios with our secure platform.</p>
+      <a href="#portfolio" class="cta-button">Start Investing</a>
     </div>
   </section>
 
   <!-- Storyline Section -->
-  <section id="about" class="storyline">
+  <section class="storyline">
     <div class="container">
       <h2>Empowering Investors for 17+ Years</h2>
-      <p>Since 2008, CryptoVault has helped investors worldwide build wealth through innovative crypto and stock portfolios. Managing over $2 billion in assets, our platform supports 100,000+ customers with expert guidance and secure investment solutions.</p>
+      <p>Since 2008, CryptoVault has helped investors worldwide build wealth through innovative crypto and stock portfolios. Managing over $2 billion in assets, our platform supports 100,000+ customers with expert guidance.</p>
     </div>
   </section>
 
@@ -57,23 +52,34 @@
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="services">
+  <section class="services">
     <div class="container">
       <h2>Investment Solutions</h2>
       <div class="service-grid">
         <div class="service-card">
           <h3>Trust Services</h3>
-          <p>Safeguard your investments with our secure custody solutions, ensuring your crypto and stock portfolios are protected 24/7.</p>
+          <p>Safeguard your investments with our secure custody solutions, ensuring your portfolios are protected 24/7.</p>
         </div>
         <div class="service-card">
           <h3>Financing</h3>
-          <p>Access tailored investment plans to grow your wealth, with automated portfolios designed for long-term success.</p>
+          <p>Access tailored investment plans to grow your wealth with automated strategies.</p>
         </div>
         <div class="service-card">
           <h3>Global Advisors</h3>
-          <p>Partner with our expert advisors worldwide to create personalized investment strategies that align with your financial goals.</p>
+          <p>Partner with expert advisors worldwide to create personalized investment strategies.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Management Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>Your Portfolio, Handled by the Pros</h2>
+      <p>Get timely market insights with an expert-managed portfolio that proactively adjusts your investments. CryptoVault Gold members enjoy zero management fees on every dollar over $100K.</p>
+      <p class="terms">Terms apply. Gold subscription $5/month.</p>
+      <a href="#login" class="cta-button">Get Started</a>
+      <p class="disclaimer">For illustrative purposes only. Portfolio management offered through CryptoVault Asset Management, an SEC-registered investment advisor. Gold membership is offered by CryptoVault Gold, LLC.</p>
     </div>
   </section>
 
