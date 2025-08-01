@@ -35,6 +35,7 @@ nav a {
   text-decoration: none;
   margin-left: 15px;
   font-size: 1em;
+  transition: color 0.3s;
 }
 nav a:hover {
   color: #00cc00;
@@ -42,20 +43,21 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 204, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1518546305927-5a555bb7020d');
+  background: linear-gradient(rgba(0, 204, 0, 0.1), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1624969862293-b77629da66d9');
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 .hero h2 {
-  font-size: 2.5em;
+  font-size: 2.8em;
   color: #00cc00;
+  margin: 0;
 }
 .hero p {
   font-size: 1.2em;
   max-width: 600px;
-  margin: 10px auto;
+  margin: 15px auto;
 }
 .cta-button {
   display: inline-block;
@@ -73,7 +75,7 @@ nav a:hover {
 
 /* Storyline Section */
 .storyline {
-  padding: 40px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 .storyline h2 {
@@ -82,14 +84,14 @@ nav a:hover {
 }
 .storyline p {
   max-width: 800px;
-  margin: 10px auto;
+  margin: 15px auto;
   font-size: 1.1em;
 }
 
 /* Stats Section */
 .stats {
   background: #1a1a1a;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 .stats .container {
   display: flex;
@@ -105,6 +107,10 @@ nav a:hover {
   flex: 1;
   min-width: 200px;
   box-shadow: 0 0 10px rgba(0, 204, 0, 0.2);
+  transition: transform 0.3s;
+}
+.stat-card:hover {
+  transform: translateY(-5px);
 }
 .stat-card h3 {
   color: #00cc00;
@@ -117,7 +123,7 @@ nav a:hover {
 
 /* Services Section */
 .services {
-  padding: 40px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 .services h2 {
@@ -150,7 +156,7 @@ nav a:hover {
 
 /* Login Section */
 .login {
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 .card {
   background: #1a1a1a;
@@ -204,7 +210,7 @@ footer {
     margin: 5px;
   }
   .hero h2 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
   .hero p {
     font-size: 1em;
