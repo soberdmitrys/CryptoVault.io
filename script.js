@@ -32,3 +32,38 @@ function logout() {
   localStorage.removeItem('user');
   window.location.href = 'index.html';
 }
+
+// Scroll Effects
+document.addEventListener('scroll', () => {
+  const scrollEffects = document.querySelectorAll('.scroll-effect');
+  scrollEffects.forEach(effect => {
+    const rect = effect.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    if (rect.top >= 0 && rect.top < windowHeight) {
+      if (effect.dataset.type === 'fade') {
+        effect.style.opacity = 1;
+      } else if (effect.dataset.type === 'parallax') {
+        const scrollPosition = window.scrollY;
+        effect.style.transform = `translateY(${scrollPosition * 0.2}px)`;
+      }
+    } else {
+      if (effect.dataset.type === 'fade') {
+        effect.style.opacity = 0;
+      }
+    }
+  });
+});
+
+// Initial check on page load
+window.addEventListener('load', () => {
+  const scrollEffects = document.querySelectorAll('.scroll-effect');
+  scrollEffects.forEach(effect => {
+    const rect = effect.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+    if (rect.top >= 0 && rect.top < windowHeight) {
+      if (effect.dataset.type === 'fade') {
+        effect.style.opacity = 1;
+      }
+    }
+  });
+});
